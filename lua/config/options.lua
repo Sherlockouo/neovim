@@ -7,7 +7,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 local opt = vim.opt
-
+opt.winbar = "%=%m %f"
 opt.autowrite = true -- Enable auto write
 opt.clipboard = "unnamedplus" -- Sync with system clipboard
 opt.completeopt = "menu,menuone,noselect"
@@ -57,3 +57,24 @@ end
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+
+--opts = {
+--  filesystem = {
+--    bind_to_cwd = false,
+--    follow_current_file = true,
+--    use_libuv_file_watcher = true,
+--  },
+--  window = {
+--    mappings = {
+--      ["<space>"] = "none",
+--    },
+--  },
+--  default_component_configs = {
+--    indent = {
+--      with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
+--      expander_collapsed = "",
+--      expander_expanded = "",
+--      expander_highlight = "NeoTreeExpander",
+--    },
+--  },
+--}
