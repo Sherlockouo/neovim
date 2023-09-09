@@ -9,7 +9,7 @@ function M.get()
     require("lazyvim.plugins.lsp.format").format({ force = true })
   end
   if not M._keys then
-  ---@class PluginLspKeys
+    ---@class PluginLspKeys
     -- stylua: ignore
     M._keys =  {
       { "<leader>cd", vim.diagnostic.open_float, desc = "Line Diagnostics" },
