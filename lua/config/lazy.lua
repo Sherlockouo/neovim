@@ -19,9 +19,8 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins" },
     { import = "plugins.appearence.colorscheme" },
-    -- { import = "plugins.init" },
-    -- { import = "plugins.lsp.keymaps" },
-    -- { import = "plugins.lsp.format" },
+    { import = "plugins.lsp.keymaps" },
+    { import = "plugins.lsp.format" },
     { import = "plugins.extras.vscode" },
     { import = "plugins.extras.linting.eslint" },
     { import = "plugins.extras.ui.mini-starter" },
@@ -58,6 +57,7 @@ require("lazy").setup({
     { import = "plugins.extras.editor.editor" },
     { import = "plugins.extras.editor.leap" },
     { import = "plugins.extras.editor.mini-files" },
+    -- { import = "util" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -79,7 +79,7 @@ require("lazy").setup({
         -- "netrwPlugin",
         "tarPlugin",
         "tohtml",
-        "tutor",
+        -- "tutor",
         "zipPlugin",
       },
     },

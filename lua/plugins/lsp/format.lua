@@ -1,9 +1,9 @@
-local Util = require("lazy.core.util")
+local Util = require("lazyvim.util")
 
 local M = {}
 
 ---@type PluginLspOpts
-M.opts = nil
+M.opts = {}
 
 function M.enabled()
   return M.opts.autoformat
