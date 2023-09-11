@@ -84,11 +84,6 @@ return {
             pinned = true,
             open = "Neotree position=top buffers",
           },
-          {
-            ft = "Outline",
-            pinned = true,
-            open = "SymbolsOutlineOpen",
-          },
           "neo-tree",
         },
         keys = {

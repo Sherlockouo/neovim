@@ -28,6 +28,7 @@ require("lazy").setup({
     { import = "plugins.extras.ui.mini-animate" },
     { import = "plugins.extras.ui.ui" },
     { import = "plugins.extras.ui.edgy" },
+    { import = "plugins.extras.ui.symbols-outline" },
     { import = "plugins.extras.test.core" },
     { import = "plugins.extras.util.project" },
     { import = "plugins.extras.util.mini-hipatterns" },
