@@ -21,6 +21,7 @@ require("lazy").setup({
     { import = "plugins.appearence.colorscheme" },
     -- { import = "plugins.lsp.keymaps" },
     { import = "plugins.lsp.config" },
+    { import = "plugins.lsp.lspsaga" },
     -- { import = "plugins.lsp.format" },
     { import = "plugins.extras.vscode" },
     { import = "plugins.extras.linting.eslint" },
