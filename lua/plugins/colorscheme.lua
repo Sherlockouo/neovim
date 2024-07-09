@@ -1,11 +1,30 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
   {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = { style = "moon" },
   },
+  {
+    "ellisonleao/gruvbox.nvim",
+    lazy = true,
+    opts = {
+      style = "dark",
+    },
+  },
 
+  {
+    "olimorris/onedarkpro.nvim",
+    lazy = true,
+    priority = 1000, -- Ensure it loads first
+  },
+
+  -- 不太好看
+  {
+    "EdenEast/nightfox.nvim",
+    lazy = true,
+  },
+
+  -- 有点淡，饱和度不够
   -- catppuccin
   {
     "catppuccin/nvim",
@@ -54,6 +73,10 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "tokyonight",
+      -- colorscheme = "gruvbox",
+      -- colorscheme = "onedark",
+      -- colorscheme ="nightfox",
+      -- colorscheme = "catppuccin",
     },
   },
 }

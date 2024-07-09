@@ -184,3 +184,5 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
 -- map esc to ctrl c 
 map("i", "<C-c>", "<Esc>", { desc = "Map escape to ctrl c" })
+
+ map({"n","x"}, "gp", "\"_dP", {desc = "Paste without overwriting buffer"})
