@@ -4,6 +4,16 @@ return {
     lazy = true,
     opts = { style = "moon" },
   },
+  --- 有点黑,neotree 是绿色的... 代码偏黄
+  {
+    "tiagovla/tokyodark.nvim",
+    lazy = true,
+    config = function(_, opts)
+      require("tokyodark").setup(opts) -- calling setup is optional
+      vim.cmd([[colorscheme tokyodark]])
+    end,
+  },
+  -- 黄黄的，传说护眼...
   {
     "ellisonleao/gruvbox.nvim",
     lazy = true,
@@ -11,7 +21,7 @@ return {
       style = "dark",
     },
   },
-
+  -- 黑不溜秋的配色，有点生硬
   {
     "olimorris/onedarkpro.nvim",
     lazy = true,
@@ -73,6 +83,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "tokyonight",
+      -- colorscheme = "tokyodark",
       -- colorscheme = "gruvbox",
       -- colorscheme = "onedark",
       -- colorscheme ="nightfox",
