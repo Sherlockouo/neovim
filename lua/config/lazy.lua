@@ -18,6 +18,13 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins" },
     -- { import = "plugins." },
+    -- 优化大文件，打开性能
+    {
+      "mireq/large_file",
+      config = function()
+        require("large_file").setup()
+      end,
+    },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
